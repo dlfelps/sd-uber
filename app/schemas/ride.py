@@ -22,3 +22,8 @@ class RideResponse(BaseModel):
     status: str
     created_at: datetime
     estimated_fare: Optional[float] = None
+
+class DriverAcceptInput(BaseModel):
+    ride_id: int
+    driver_id: int
+    accept: bool
