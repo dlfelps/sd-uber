@@ -23,7 +23,7 @@
 - [x] Task: Implement the Driver Accept/Deny API. [f807cd1]
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: The Matching Loop' (Protocol in workflow.md)
 
-## Phase 4: Integration & Verification
+## Phase 4: Integration & Verification [checkpoint: 6eb9175]
 - [x] Task: Create an end-to-end integration test for the matching flow. [37ca44c]
 - [x] Task: Verify adherence to educational product guidelines (embedded context, PR deep dives). [deac22c]
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Integration & Verification' (Protocol in workflow.md)
