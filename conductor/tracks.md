@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [~] **Track: Build the core matching engine**
+- [x] **Track: Build the core matching engine**
   *Link: [./tracks/core_matching_20260118/](./tracks/core_matching_20260118/)*
