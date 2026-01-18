@@ -20,7 +20,7 @@
     - [x] Implement proximity search for candidate drivers. [26b6296]
     - [x] Implement the sequential notification loop with Redis distributed locking. [26b6296]
     - [x] Add detailed observability logs for each step. [26b6296]
-- [~] Task: Implement the Driver Accept/Deny API.
+- [x] Task: Implement the Driver Accept/Deny API. [f807cd1]
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: The Matching Loop' (Protocol in workflow.md)
 
 ## Phase 4: Integration & Verification
