@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from app.scripts.driver_simulator import simulate
 from fakeredis import FakeAsyncRedis
 
@@ -17,4 +17,4 @@ async def test_simulate_logic():
         pos = await fake_redis.geopos("driver_locations", "1")
         assert pos[0] is not None
         
-        await fake_redis.close()
+        await fake_redis.aclose()

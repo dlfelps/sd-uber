@@ -5,12 +5,9 @@ from redis.asyncio import Redis
 from app.services.location_service import LocationService
 import os
 
-app = typer.Typer()
-
 async def simulate(driver_ids: list[int], interval: float, redis_url: str, iterations: int = None):
     """
     Simulates driver movement and updates locations in Redis.
-    If iterations is set, it will run for that many loops (useful for testing).
     """
     redis_client = Redis.from_url(redis_url)
     location_service = LocationService(redis_client)
@@ -45,19 +42,17 @@ async def simulate(driver_ids: list[int], interval: float, redis_url: str, itera
     except asyncio.CancelledError:
         typer.echo("Simulation stopped.")
     finally:
-        await redis_client.close()
+        await redis_client.aclose()
 
-@app.command()
-def start(
+def main(
     driver_ids: str = typer.Option("1,2,3", help="Comma-separated list of driver IDs"),
     interval: float = typer.Option(5.0, help="Update interval in seconds"),
     redis_url: str = typer.Option("redis://localhost:6379", help="Redis URL"),
     iterations: int = typer.Option(None, help="Number of iterations to run (None for infinite)")
 ):
-    # Use environment variable if available
     url = os.getenv("REDIS_URL", redis_url)
     ids = [int(i.strip()) for i in driver_ids.split(",")]
     asyncio.run(simulate(ids, interval, url, iterations))
 
 if __name__ == "__main__":
-    app()
+    typer.run(main)
