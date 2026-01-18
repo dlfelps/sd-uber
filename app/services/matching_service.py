@@ -9,6 +9,14 @@ from redis.asyncio import Redis
 logger = logging.getLogger(__name__)
 
 class MatchingService:
+    """
+    Service responsible for pairing available drivers with ride requests.
+    
+    The matching process involves:
+    1. Finding nearby drivers using geospatial search.
+    2. Sequentially attempting to match drivers, using distributed locks to prevent race conditions.
+    3. Updating both the Ride and DriverProfile statuses upon a successful match.
+    """
     def __init__(self, db: AsyncSession, location_service: LocationService, redis_client: Redis):
         self.db = db
         self.location_service = location_service
