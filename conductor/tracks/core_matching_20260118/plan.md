@@ -14,7 +14,7 @@
 - [x] Task: Create the CLI Driver Simulator to push mock location updates. [e2ddbd0]
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Location & Proximity' (Protocol in workflow.md)
 
-## Phase 3: The Matching Loop
+## Phase 3: The Matching Loop [checkpoint: ea8ef56]
 - [x] Task: Implement the Ride Request API and status management. [0e83102]
 - [x] Task: Develop the asynchronous Matching Service. [26b6296]
     - [x] Implement proximity search for candidate drivers. [26b6296]
