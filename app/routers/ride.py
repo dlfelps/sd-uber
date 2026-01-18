@@ -53,6 +53,9 @@ async def driver_accept_ride(input: DriverAcceptInput, db: AsyncSession = Depend
     if not profile:
         raise HTTPException(status_code=404, detail="Driver profile not found")
     
+    if profile.user_id == ride.driver_id and ride.status == RideStatus.MATCHED:
+        return {"status": "accepted"}
+
     if ride.status != RideStatus.REQUESTED:
         raise HTTPException(status_code=400, detail="Ride is already matched or completed")
     

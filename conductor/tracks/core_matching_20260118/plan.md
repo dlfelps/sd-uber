@@ -24,6 +24,6 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: The Matching Loop' (Protocol in workflow.md)
 
 ## Phase 4: Integration & Verification
-- [ ] Task: Create an end-to-end integration test for the matching flow.
+- [~] Task: Create an end-to-end integration test for the matching flow.
 - [ ] Task: Verify adherence to educational product guidelines (embedded context, PR deep dives).
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Integration & Verification' (Protocol in workflow.md)
