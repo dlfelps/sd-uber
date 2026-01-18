@@ -16,10 +16,10 @@
 
 ## Phase 3: The Matching Loop
 - [x] Task: Implement the Ride Request API and status management. [0e83102]
-- [~] Task: Develop the asynchronous Matching Service.
-    - [~] Implement proximity search for candidate drivers.
-    - [ ] Implement the sequential notification loop with Redis distributed locking.
-    - [ ] Add detailed observability logs for each step.
+- [x] Task: Develop the asynchronous Matching Service. [26b6296]
+    - [x] Implement proximity search for candidate drivers. [26b6296]
+    - [x] Implement the sequential notification loop with Redis distributed locking. [26b6296]
+    - [x] Add detailed observability logs for each step. [26b6296]
 - [ ] Task: Implement the Driver Accept/Deny API.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: The Matching Loop' (Protocol in workflow.md)
 
