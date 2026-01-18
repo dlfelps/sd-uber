@@ -7,7 +7,7 @@
     - [x] Implement the database models. [d0fca8a]
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Foundation & Models' (Protocol in workflow.md)
 
-## Phase 2: Location & Proximity
+## Phase 2: Location & Proximity [checkpoint: 3f0c431]
 - [x] Task: Implement the Location Service using Redis Geospatial commands. [35c2794]
     - [x] Write tests for location updates and proximity searches. [35c2794]
     - [x] Implement the Location Service logic. [35c2794]
