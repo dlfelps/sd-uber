@@ -15,7 +15,7 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Location & Proximity' (Protocol in workflow.md)
 
 ## Phase 3: The Matching Loop
-- [ ] Task: Implement the Ride Request API and status management.
+- [~] Task: Implement the Ride Request API and status management.
 - [ ] Task: Develop the asynchronous Matching Service.
     - [ ] Implement proximity search for candidate drivers.
     - [ ] Implement the sequential notification loop with Redis distributed locking.
