@@ -18,3 +18,5 @@
 - **Orchestration:** Docker Compose
 - **Rationale:** Enables a consistent development environment where all services (FastAPI, PostgreSQL, Redis) can be spun up with a single command.
 - **API Documentation:** Swagger/OpenAPI (built into FastAPI)
+- **Package Manager:** uv
+- **Rationale:** Fast Python package installer and resolver, simplifying dependency management and virtual environment handling. We use `uv run` for executing commands within the project environment.

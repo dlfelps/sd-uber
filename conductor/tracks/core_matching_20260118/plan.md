@@ -2,8 +2,8 @@
 
 ## Phase 1: Foundation & Models
 - [x] Task: Set up the basic FastAPI project structure with Docker Compose. [0b4605e]
-- [ ] Task: Implement PostgreSQL models for Rider, Driver, and Ride.
-    - [ ] Write unit tests for database models and migrations.
+- [~] Task: Implement PostgreSQL models for Rider, Driver, and Ride.
+    - [~] Write unit tests for database models and migrations.
     - [ ] Implement the database models.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Foundation & Models' (Protocol in workflow.md)
 
