@@ -1,7 +1,7 @@
 # Implementation Plan: Core Matching Engine
 
 ## Phase 1: Foundation & Models
-- [~] Task: Set up the basic FastAPI project structure with Docker Compose.
+- [x] Task: Set up the basic FastAPI project structure with Docker Compose. [0b4605e]
 - [ ] Task: Implement PostgreSQL models for Rider, Driver, and Ride.
     - [ ] Write unit tests for database models and migrations.
     - [ ] Implement the database models.
