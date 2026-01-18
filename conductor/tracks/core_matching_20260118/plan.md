@@ -11,7 +11,7 @@
 - [x] Task: Implement the Location Service using Redis Geospatial commands. [35c2794]
     - [x] Write tests for location updates and proximity searches. [35c2794]
     - [x] Implement the Location Service logic. [35c2794]
-- [~] Task: Create the CLI Driver Simulator to push mock location updates.
+- [x] Task: Create the CLI Driver Simulator to push mock location updates. [e2ddbd0]
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Location & Proximity' (Protocol in workflow.md)
 
 ## Phase 3: The Matching Loop
